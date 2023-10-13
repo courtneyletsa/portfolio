@@ -12,12 +12,12 @@ body {
     padding: 35px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .wrapper .header ul li  {
     list-style: none;
     display:inline-block;
-    margin: 0 20px;
+    margin: 0 50px;
     position: relative;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -46,8 +46,10 @@ body {
 .wrapper .contact-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    margin-left: 50px;
+    margin-top: 100px;
 }
 .wrapper .contact-content .contact-text h1 {
     font-family: 'Playfair Display', serif;
@@ -57,4 +59,14 @@ body {
 .wrapper .contact-content .contact-text p {
     font-family: 'Lato', sans-serif;
     font-size: 40px; 
+}
+
+.social-buttons {
+    height: 100px;
+}
+
+.fa {
+    color: #000;
+    font-size: 50px !important;
+    text-decoration: none !important;
 }
