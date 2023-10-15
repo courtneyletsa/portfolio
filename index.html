@@ -9,30 +9,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="wrapper">
+    <section class="wrapper">
+
         <div class="header">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <h1 class="logo">Courtney</h1>
+            <div class="menu-icon" id="menu-icon">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"></path>
+                    </svg>
+            </div>
+            <ul class="menu">
+                <li class="active-button"><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <!-- <li><a href="skills.html">Skills</a></li> -->
-                <li><a href="portfolio.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="main-content">
-            
+
+        <div class="main-content" id="Home">
             <div class="hero-text">
                 <h1>Hi! I'm Courtney Letsa</h1>
                 <p>Data Scientist | Chief Technology Officer @ EduSprint | Dreamer</p>
+                <p class="quote">Exploring the realms of data as a Data Scientist, leading with technology as a Chief Technology Officer, and dreaming beyond limits – that's the incredible journey of Courtney Letsa, where data becomes dreams and technology fuels the imagination.</p>
             </div>
-            <img src="pic.jpeg" alt="" width="400" height="400">
+            <div class="image-content">
+                <img src="pic.jpeg" alt="" width="400" height="400">
+            </div>
         </div>
+
         <div class="button">
             <a href="./Resume.pdf">Download CV</a>
         </div>
-    </div>
-   
+    </section>
+
+    <!-- About -->
+    <section class="main-content2" id="about">
+        <div class="about-text">
+            <h2>Combining Geoscience and Technology</h2>
+            <p>
+                I  started my career as a Geoscientist but made the transition to the tech industry about a year ago. To expand my skill set, I am currently studying data analytics with Python on DataCamp. I believe that my background in understanding Earth's systems and my analytical skills can be a valuable asset in the tech sector.
     
+                Currently, I am working as a Training Assistant at Soronko Academy, where I am involved in training over 100 young women in digital skills as part of the Rotary Girls’ Coding and the MasterCard Women in Digital Skills projects. In addition to my full-time role, I also volunteer my time on weekends to mentor a group of young women from Nigeria and Kenya who are studying data analytics with Eloquent Data, a Pan-African data community. I am dedicated to supporting them in their data learning journey."
+        </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container2" id="portfolio">
+        <div class="wrapper-portfolio">
+            <div class="portfolio-content">
+                <h2>Recent Works</h2>
+            </div>
+                <div class="works-content">
+
+                    <div class="work">
+                        <img src="covid.jpeg" alt="">
+                        <div class="work-description">
+                            <h2>Unmasking Africa’s COVID-19 Journey: Cases, Deaths and Recoveries</h2>
+                            <p>Fellow Ghanaians, good evening ……. As of Wednesday, 6th May, a total of 135,902 tests had been conducted……
+                            The above is an excerpt from the President of Ghana, H.E Nana Akuffo Addo’s address to the nation almost every Sunday since the first 2 cases of COVID-19 were recorded in Ghana.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="work2">
+                            <img src="climate_change.jpg" alt="">
+                            <div class="work-description">
+                                <h2>Climate change and impact in Africa</h2>
+                                <p>The United Nations define climate change as long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun’s activity or large volcanic eruptions. But since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil, and gas.
+                                </p>
+                            </div>
+
+                        
+                    </div>
+                    
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="main-content2" id="contact">
+        <div class="contact-content">
+            <div class="contact-text">
+                <h1>courtney.letsa@meltwater.org</h1>
+                <p>Always down to collaborate on meaningful projects. <br/>
+                    I'm hoping to further my career in Data Science. Let's get in touch ✌️</p>
+            </div>
     
+            <div class="social-buttons">
+                <!-- <a href="#" class="fa fa-twitter" aria-hidden="true"></a> -->
+                <a href="https://github.com/courtneyletsa" class="fa fa-github" aria-hidden="true"></a>
+                <a href="www.linkedin.com/in/courtneyletsa" class="fa fa-linkedin" aria-hidden="true"></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add this to a new JavaScript file (script.js) linked in your HTML file
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.getElementById("menu-icon");
+        const svg = document.querySelector('svg');
+        const menu = document.querySelector(".menu");
+        menuIcon.addEventListener("click", function () {
+            menu.classList.toggle("active");
+            svg.classList.toggle("interact");
+        });
+    });
+
+    </script>
 </body>
 </html>
