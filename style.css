@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Montserrat:wght@400;500;700&family=Old+Standard+TT:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 * {
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -34,35 +36,50 @@ body {
 }
 .wrapper .header ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
 }
 .wrapper .main-content {
   display: flex;
   justify-content: left;
-  align-items: end;
+  align-items: center;
   flex-direction: row;
+  background-color: #0c1f36;
 }
 .wrapper .main-content img {
   border-radius: 80%;
   margin-left: 100px;
 }
+
+.main-content {
+  min-height: 100vh;
+}
+
 .main-content .hero-text h1 {
   font-family: "Playfair Display", serif;
   font-size: 70px;
   color: black;
   margin-bottom: 0px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   /* padding-top: 100px; */
+  color: #fff;
 }
+
+.wrapper h2 {
+  margin: 0;
+}
+
 .main-content .hero-text {
-  width: 50vw;
-  margin-bottom: 150px;
+  /* width: 50vw; */
+  padding-left: 2rem;
+  /* margin-bottom: 150px; */
+  /* border: 1px solid red; */
 }
 .main-content .hero-text p {
   font-family: "Lato", sans-serif;
   font-size: 25px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  color: #fff;
 }
 .contact-content {
   display: flex;
@@ -107,6 +124,9 @@ body {
 .about-text p {
   font-size: 20px;
   width: 50vw;
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+  text-align: justify;
 }
 
 .portfolio-content {
@@ -131,7 +151,7 @@ body {
 
 .button {
   margin-left: 50px;
-  border-bottom: 12px solid red;
+  /* border-bottom: 12px solid red; */
   width: 12vw;
 }
 
@@ -224,8 +244,19 @@ div.image-content {
 
 .main-content2 {
     padding: 40px;
+    display: flex;
+    gap: 2rem
 }
 
+.about-text {
+  border: 1px solid red;
+  width: 50%;
+}
+
+.img-container {
+  border: 1px solid red;
+  width: 50%;
+}
 /* responsiveness */
 @media all and (max-width: 620px) {
   html {
