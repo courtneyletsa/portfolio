@@ -147,6 +147,11 @@ div.image-content {
   width: 50vw;
 }
 
+.wrapper-portfolio {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
 .wrapper-portfolio .works-content img {
   border-radius: 15px;
 }
