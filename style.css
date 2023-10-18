@@ -23,7 +23,6 @@ body {
   position: fixed;
   padding: 10px 40px;
   margin-bottom: 75px;
-  background-color: #27bbbb;
 }
 .wrapper .header ul li {
   list-style: none;
@@ -47,7 +46,6 @@ body {
 .wrapper .main-content img {
   border-radius: 80%;
   margin-left: 100px;
-  padding-top: 80px;
 }
 .main-content .hero-text h1 {
   font-family: "Playfair Display", serif;
