@@ -23,8 +23,9 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
+  background-color: #0c1f36;
   padding: 10px 40px;
-  margin-bottom: 75px;
 }
 .wrapper .header ul li {
   list-style: none;
@@ -45,14 +46,20 @@ body {
   align-items: center;
   flex-direction: row;
   background-color: #0c1f36;
+  /* margin-top: 5rem; */
 }
-.wrapper .main-content img {
+/* .wrapper .main-content img {
   border-radius: 80%;
   margin-left: 100px;
-}
+} */
+
+/* .image-content {
+  border: 1px solid red;
+} */
 
 .main-content {
   min-height: 100vh;
+  padding-top: 5rem;
 }
 
 .main-content .hero-text h1 {
@@ -111,19 +118,22 @@ body {
   font-size: 50px !important;
   text-decoration: none !important;
 }
-.about-text {
-  display: flex;
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* border: 1px solid red; */
+  min-height: 80vh;
+  justify-content: center;
   align-items: center;
-  /* justify-content: space-between; */
-  gap: 20px;
 }
-.about-text h2 {
+
+.about-container h2 {
   font-size: 40px;
   text-align: center;
 }
-.about-text p {
+.about-container p {
   font-size: 20px;
-  width: 50vw;
+  margin-inline: 4rem;
   font-family: 'Old Standard TT', serif;
   font-size: 20px;
   text-align: justify;
@@ -132,7 +142,7 @@ body {
 .portfolio-content {
     width: 100%;
     text-align: left;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-family: 'Playfair Display', serif;
     font-size: 20px;
 }
@@ -161,15 +171,15 @@ body {
   color: #000;
 }
 
-div.image-content {
-  /* border: 2px solid green; */
+/* div.image-content {
+  border: 2px solid green;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 50vw;
   margin-top: 200px;
-}
+} */
 
 .wrapper-portfolio {
   background-color: #f2f2f2;
@@ -250,29 +260,29 @@ div.image-content {
 }
 
 .about-text {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
 }
 
+
 .img-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  background-color: #0c1f36e7;
+  border-radius: 32px;
   width: 50%;
+  display: flex;
+}
+
+.img-container img  {
+  margin-inline: auto;
+
+}
+
+.image-content {
+  margin-inline: auto;
 }
 /* responsiveness */
 @media all and (max-width: 620px) {
-  html {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  body {
-    margin: 0;
-    padding-bottom: 0;
-    width: 500px;
-    height: 100%;
-    /* border: 2px solid; */
-    /* background-color: aqua; */
-  }
 
   .wrapper {
     width: 100%;
